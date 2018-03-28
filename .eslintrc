@@ -1,0 +1,18 @@
+{
+  "parser": "babel-eslint",
+  "extends": "google",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "max-len": [2, {"code": 80, "tabWidth": 2, "ignoreUrls": true, "ignoreComments": true, "ignoreStrings": true}],
+    "require-jsdoc": [1, {
+      require: {
+        FunctionDeclaration: true,
+        MethodDefinition: true,
+        ClassDeclaration: true
+      }
+    }]
+  }
+}
