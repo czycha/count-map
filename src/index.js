@@ -24,7 +24,7 @@ class CountMap {
 
   /**
    * Create CountMap
-   * @param {Object} options
+   * @param {Object} [options={}]
    * @param {Array} [options.array=[]] - Initial values.
    * @param {hashFn} [options.hash=toString()] - Hash function to turn object into comparable string.
    * @param {boolean} [options.allowNegativeCounts=false] - Allow negative counts?
@@ -33,7 +33,7 @@ class CountMap {
     array = [],
     hash = (key) => key.toString(),
     allowNegativeCounts = false,
-  }) {
+  } = {}) {
     /**
      * Internal count object.
      * @member
